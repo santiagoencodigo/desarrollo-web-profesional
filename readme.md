@@ -244,6 +244,33 @@ En esta sección se encuentra cómo utilizar la terminal y la línea de comandos
 
 
 
+---
+
+
+
+
+
+
+
+
+## Frontend: AnimeShop
+
+* [Repositorio](https://github.com/santiagoencodigo/Desarrollo-Web-Profesional/tree/main/frontend/AnimeShop "Código fuente de AnimeShop") · [Demo en vivo](https://santiagoencodigo.github.io/Desarrollo-Web-Profesional/frontend/AnimeShop/index.html "Ver proyecto desplegado")
+
+Landing page de una tienda temática inspirada en los universos de One Piece y Naruto. Construida con HTML semántico, CSS moderno, Bootstrap 5 y JavaScript Vanilla. Incluye héroe animado con partículas estelares, catálogo dinámico de productos, carruseles interactivos, sistema de filtros, carrito funcional y diseño completamente responsive.
+
+<img src="./Assets/img/00-AnimeShop/01-hero.png" alt="Hero de AnimeShop con fondo espacial y texto animado" loading="lazy">
+
+<img src="./Assets/img/00-AnimeShop/02-productos-destacados.PNG" alt="Sección de productos destacados de AnimeShop" loading="lazy">
+
+<img src="./Assets/img/00-AnimeShop/03-newsletter.PNG" alt="Sección Únete a la Aventura de AnimeShop" loading="lazy">
+
+
+
+
+
+
+
 
 
 ---

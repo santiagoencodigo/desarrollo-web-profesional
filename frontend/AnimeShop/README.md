@@ -132,15 +132,15 @@ Todas las imágenes están alojadas en `Assets/` y se cargan dinámicamente desd
 
 ### Hero
 
-<img src="../Assets/img/00-AnimeShop/01-hero.png">
+<img src="../../Assets/img/00-AnimeShop/01-hero.png">
 
 ### Productos Destacados
 
-<img src="../Assets/img/00-AnimeShop/02-productos-destacados.PNG">
+<img src="../../Assets/img/00-AnimeShop/02-productos-destacados.PNG">
 
 ### Newsletter
 
-<img src="../Assets/img/00-AnimeShop/03-newsletter.PNG">
+<img src="../../Assets/img/00-AnimeShop/03-newsletter.PNG">
 
 ---
 
