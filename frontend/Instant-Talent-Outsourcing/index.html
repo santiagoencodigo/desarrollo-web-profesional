@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instant Talent Outsourcing - Brindamos soluciones ágiles en outsourcing para impulsar la productividad de tu empresa.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Instant Talent Outsourcing - Soluciones ágiles">
+    <meta property="og:description" content="Brindamos soluciones ágiles en outsourcing para impulsar la productividad de tu empresa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/santiagoencodigo">
+    <meta property="og:image" content="assets/hero.jpg">
+    
+    <title>Instant Talent Outsourcing | Soluciones Ágiles</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Google Fonts - Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header__container">
+            <!-- Logo/Brand -->
+            <div class="header__brand">
+                <a href="#" aria-label="Instant Talent - Ir al inicio">
+                    Instant Talent
+                </a>
+            </div>
+
+            <!-- Navegación Desktop -->
+
+            <nav class="header__nav" role="navigation" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="#sobre-nosotros" class="nav__link">Sobre nosotros</a></li>
+                    <li class="nav__item"><a href="#especificaciones" class="nav__link">Servicios</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botón Hamburguesa Mobile -->
+
+            <button 
+                class="header__hamburger" 
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                type="button">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+        </div>
+
+        <!-- Menú Mobile -->
+
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <nav class="mobile-menu__nav" role="navigation" aria-label="Navegación móvil">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="#inicio" class="mobile-menu__link">Inicio</a></li>
+                    <li class="mobile-menu__item"><a href="#sobre-nosotros" class="mobile-menu__link">Sobre nosotros</a></li>
+                    <li class="mobile-menu__item"><a href="#servicios" class="mobile-menu__link">Servicios</a></li>
+                    <li class="mobile-menu__item"><a href="#contacto" class="mobile-menu__link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+    <!-- Sección Hero -->
+
+
+
+
+
+        <section class="hero" id="inicio" role="region" aria-label="Sección principal">
+            <div class="hero__container">
+                <!-- Contenido Hero Izquierda -->
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Instant Talent<br>
+                        Outsourcing<br>
+                        S.A.S
+                    </h1>
+                    <p class="hero__description">
+                        Brindamos soluciones ágiles en outsourcing para impulsar la productividad de tu empresa.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#especificaciones" class="btn btn--primary">Servicios</a>
+                        <a href="#contacto" class="btn btn--secondary">Contáctanos</a>
+                    </div>
+                </div>
+
+                <!-- Imagen/Arte Visual Derecha -->
+                <div class="hero__visual" aria-hidden="true">
+                    <!-- Decoración visual abstracta -->
+                    <div class="hero__visual-decoration"></div>
+                </div>
+            </div>
+
+            <!-- Overlay degradado para legibilidad -->
+            <div class="hero__overlay" aria-hidden="true"></div>
+        </section>
+
+
+
+
+
+    <!-- Sección Talento -->
+
+
+
+
+
+    <section class="talento">
+        <div class="talento__logo">
+            <img 
+                src="./img/1.Instant Talent.PNG" 
+                alt="Instant Talent Logo - Talent Outsourcing"
+                class="talento__logo-img"
+            >
+        </div>
+
+        <div class="talento__content">
+            <h1 class="talento__title talento__title--animate">
+                Impulsamos tu empresa con el mejor talento
+            </h1>
+
+            <p class="talento__description">
+                En <strong>Instant Talent</strong> conectamos empresas con el mejor talento de forma 
+                rápida, eficiente y confiable. Ofrecemos soluciones en 
+                <strong>outsourcing, selección y administración de personal</strong>, ayudando a tu 
+                negocio a crecer con equipos comprometidos y resultados reales.
+            </p>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Servicios -->
+
+
+
+
+
+    <section class="servicios">
+        <div class="servicios__grid">
+
+            <div class="servicios__card">
+                <span class="servicios__icon">♦</span>
+                <h3 class="servicios__title">Reclutamiento y Selección</h3>
+                <p class="servicios__description">
+                    Encontramos el perfil ideal para cada cargo. Aplicamos procesos de selección profesionales, 
+                    evaluaciones por competencias y filtros personalizados para asegurar el mejor talento para tu organización.
+                </p>
+            </div>
+
+            <div class="servicios__card">
+                <span class="servicios__icon">⬢</span>
+                <h3 class="servicios__title">Capacitación y Desarrollo</h3>
+                <p class="servicios__description">
+                    Impulsamos el crecimiento del talento de tu empresa a través de programas de 
+                    <strong>formación y desarrollo continuo</strong>. Diseñamos capacitaciones adaptadas a tus 
+                    necesidades, fortaleciendo competencias, liderazgo y productividad.
+                </p>
+            </div>
+
+            <div class="servicios__card">
+                <span class="servicios__icon">▲</span>
+                <h3 class="servicios__title">Outsourcing de Personal Operativo</h3>
+                <p class="servicios__description">
+                    Optimizamos tu operación con soluciones de <strong>outsourcing especializado</strong>. 
+                    Nos encargamos del <strong>reclutamiento, contratación y administración</strong> de personal 
+                    operativo calificado, entre otras habilidades.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Vision y Misión -->
+
+
+
+
+
+    <section class="proposito proposito--vision">
+        <h2 class="proposito__titulo proposito__titulo--animado">Nuestra Visión</h2>
+
+        <div class="proposito__contenido">
+            <span class="proposito__icono">❝</span>
+            <p class="proposito__texto proposito__texto--animado">
+                Ser una empresa líder en <strong>outsourcing y gestión del talento humano</strong>, 
+                reconocida por <strong>impulsar el crecimiento empresarial</strong> a través de 
+                soluciones ágiles, innovadoras y centradas en las personas.
+            </p>
+        </div>
+    </section>
+
+
+
+    <section class="proposito proposito--mision">
+        <h2 class="proposito__titulo proposito__titulo--animado">Nuestra Misión</h2>
+
+        <div class="proposito__contenido">
+            <span class="proposito__icono">❝</span>
+            <p class="proposito__texto proposito__texto--animado">
+                Conectamos empresas con el mejor talento, ofreciendo soluciones en outsourcing y 
+                gestión humana que impulsan la productividad y el crecimiento empresarial.
+            </p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Valores -->
+
+
+
+
+
+<section class="valores">
+    <div class="valores__container">
+
+        <h2 class="valores__titulo">Valores Corporativos</h2>
+
+        <div class="valores__grid">
+
+            <!-- Valor 1 -->
+            <div class="valores__item">
+                <span class="valores__icono">🔥</span>
+                <h3 class="valores__nombre">Compromiso</h3>
+                <p class="valores__descripcion">
+                    Cumplir con excelencia, garantizando confianza y resultados a clientes y colaboradores.
+                </p>
+            </div>
+
+            <!-- Valor 2 -->
+            <div class="valores__item">
+                <span class="valores__icono">⚖️</span>
+                <h3 class="valores__nombre">Responsabilidad</h3>
+                <p class="valores__descripcion">
+                    Actuar con ética y transparencia en cada proceso, asegurando el cumplimiento legal.
+                </p>
+            </div>
+
+            <!-- Valor 3 -->
+            <div class="valores__item">
+                <span class="valores__icono">💡</span>
+                <h3 class="valores__nombre">Innovación</h3>
+                <p class="valores__descripcion">
+                    Implementar soluciones modernas y tecnológicas para optimizar la gestión del talento.
+                </p>
+            </div>
+
+            <!-- Valor 4 -->
+            <div class="valores__item">
+                <span class="valores__icono">🤝</span>
+                <h3 class="valores__nombre">Trabajo en Equipo</h3>
+                <p class="valores__descripcion">
+                    Fomentar la colaboración para alcanzar mejores resultados de manera conjunta.
+                </p>
+            </div>
+
+            <!-- Valor 5 -->
+            <div class="valores__item">
+                <span class="valores__icono">🎯</span>
+                <h3 class="valores__nombre">Calidad en el Servicio</h3>
+                <p class="valores__descripcion">
+                    Ofrecer atención personalizada, eficiente y orientada a las necesidades del cliente.
+                </p>
+            </div>
+
+            <!-- Valor 6 -->
+            <div class="valores__item">
+                <span class="valores__icono">💜</span>
+                <h3 class="valores__nombre">Empatía</h3>
+                <p class="valores__descripcion">
+                    Valorar a las personas y promover un trato humano, justo y cercano.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    
+    <!-- Sección Objetivos -->
+
+
+
+
+    
+<section class="objetivos">
+    <div class="objetivos__container">
+
+        <h2 class="objetivos__titulo">Objetivos</h2>
+
+        <!-- Objetivo General -->
+        <h3 class="objetivos__general-titulo">Objetivo General</h3>
+        <p class="objetivos__general-texto">
+            Brindar soluciones integrales en outsourcing y gestión del talento humano, optimizando los procesos laborales 
+            y contribuyendo al crecimiento mediante un servicio ágil, confiable e innovador.
+        </p>
+
+        <!-- Objetivos Específicos -->
+        <h3 class="objetivos__especificos-titulo objetivos__especificos-titulo--bounce">
+            Objetivos Específicos
+        </h3>
+
+        <ol class="objetivos__lista-grid">
+            <li class="objetivos__item">
+                Conectar empresas con personal calificado, garantizando eficiencia y resultados en cada proceso de contratación.
+            </li>
+
+            <li class="objetivos__item">
+                Fortalecer la capacitación y desarrollo del talento humano, promoviendo el crecimiento profesional y la productividad.
+            </li>
+
+            <li class="objetivos__item">
+                Implementar herramientas tecnológicas que mejoren la gestión y reduzcan los tiempos operativos.
+            </li>
+
+            <li class="objetivos__item">
+                Consolidar alianzas estratégicas con empresas de diferentes sectores para ampliar el alcance del servicio.
+            </li>
+        </ol>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Sección Nuestro Enfoque -->
+
+
+
+
+
+<section id="nuestro-enfoque" class="enfoque">
+    <div class="enfoque__container">
+
+        <h2 class="enfoque__titulo">Nuestro Enfoque</h2>
+
+        <div class="enfoque__contenido">
+            <p class="enfoque__texto">
+                En <strong>Instant Talent</strong> trabajamos con enfoque humano, tecnológico y estratégico
+                para garantizar que cada empresa encuentre el talento que necesita y cada persona 
+                cuente con oportunidades reales de crecimiento.
+            </p>
+        </div>
+    </div>
+</section>
+
+    
+
+
+
+    <!-- Sección Politicas -->
+
+    
+
+
+
+    <section id="politicas">
+        <div class="container">
+            <h2>Políticas</h2>
+            
+            <div class="politicas-layout">
+                <dl class="politicas-lista">
+                    <dt class="politica-titulo">Política de Calidad:</dt>
+                    <dd class="politica-descripcion">Garantizamos un servicio eficiente, confiable y orientado a la satisfacción del cliente, cumpliendo estándares legales.</dd>
+                    
+                    <dt class="politica-titulo">Política de Talento Humano:</dt>
+                    <dd class="politica-descripcion">Promovemos la igualdad y el bienestar del equipo, reconociendo el talento como motor principal.</dd>
+                    
+                    <dt class="politica-titulo">Política de Confidencialidad:</dt>
+                    <dd class="politica-descripcion">Protegemos la información de clientes, aliados y colaboradores con integridad, discreción y responsabilidad.</dd>
+                    
+                    <dt class="politica-titulo">Política de Responsabilidad Empresarial:</dt>
+                    <dd class="politica-descripcion">Actuamos con ética, respeto y compromiso social, contribuyendo al desarrollo sostenible y al empleo digno.</dd>
+                    
+                    <dt class="politica-titulo">Política de Innovación y Mejora Continua:</dt>
+                    <dd class="politica-descripcion">Fomentamos la innovación y actualización constante, buscando siempre la mejora y eficiencia en el servicio.</dd>
+                </dl>
+                
+                <div class="politicas-visual">
+                    <img src="./img/2.Politicas.PNG">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Sección Estrategias -->
+
+
+
+
+
+    <section id="estrategias">
+        <div class="container">
+            <div class="estrategias-layout">
+                <div class="estrategias-visual">
+                    <span class="icon-ajedrez">♞</span>
+                </div>
+
+                <div class="estrategias-contenido">
+                    <h2>Estrategias</h2>
+                    <ol class="estrategias-lista">
+                        <li class="estrategia-item">
+                            <h3 class="estrategia-titulo">Estrategia de crecimiento:</h3>
+                            <p class="estrategia-texto">Expandir la presencia de la empresa mediante alianzas estratégicas y posicionamiento digital.</p>
+                        </li>
+                        <li class="estrategia-item">
+                            <h3 class="estrategia-titulo">Estrategia de innovación:</h3>
+                            <p class="estrategia-texto">Implementar herramientas tecnológicas que optimicen el reclutamiento, la selección y la gestión de personal.</p>
+                        </li>
+                        <li class="estrategia-item">
+                            <h3 class="estrategia-titulo">Estrategia de fidelización:</h3>
+                            <p class="estrategia-texto">Fortalecer las relaciones con los clientes mediante un servicio personalizado, ágil y de alta calidad.</p>
+                        </li>
+                        <li class="estrategia-item">
+                            <h3 class="estrategia-titulo">Estrategia de talento humano:</h3>
+                            <p class="estrategia-texto">Capacitar y desarrollar continuamente al personal para garantizar un servicio profesional, ético y eficiente.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Sección Equipo/Team -->
+
+
+
+
+
+<section class="team" id="sobre-nosotros" aria-label="Nuestro Equipo">
+    <div class="team__container">
+
+        <h2 class="team__title">Nuestro Equipo</h2>
+        <p>
+            Contamos con un equipo comprometido, profesional y multidisciplinario, apasionado por 
+            la gestión del talento humano. Nos caracteriza la responsabilidad, eficiencia y cercanía 
+            con nuestros clientes, trabajando juntos para ofrecer soluciones ágiles, confiables y 
+            orientadas a resultados.
+        </p>
+
+        <p class="team__subtitle">Conoce a los profesionales que lideran Instant Talent</p>
+
+        <div class="team__grid">
+
+            <!-- 1 -->
+            <article class="team__card">
+                <div class="team__avatar">AA</div>
+                <h3 class="team__name">Ana Maria Aguirre Reina</h3>
+                <p class="team__role">Gerente General</p>
+                <p class="team__description">
+                    Lidera la dirección estratégica de la empresa, garantizando crecimiento, 
+                    rentabilidad y posicionamiento en outsourcing.
+                </p>
+            </article>
+
+            <!-- 2 -->
+            <article class="team__card">
+                <div class="team__avatar">BJ</div>
+                <h3 class="team__name">Brayan Javier Caceres Sanchez</h3>
+                <p class="team__role">Jefe Contable</p>
+                <p class="team__description">
+                    Controla la contabilidad y asegura el cumplimiento legal y fiscal para soporte 
+                    estratégico.
+                </p>
+            </article>
+
+            <!-- 3 -->
+            <article class="team__card">
+                <div class="team__avatar">KG</div>
+                <h3 class="team__name">Kevin Andres Garzon Vohorquez</h3>
+                <p class="team__role">Jefe de TI</p>
+                <p class="team__description">
+                    Dirige la infraestructura tecnológica, garantizando seguridad y continuidad 
+                    operativa.
+                </p>
+            </article>
+
+            <!-- 4 -->
+            <article class="team__card">
+                <div class="team__avatar">EB</div>
+                <h3 class="team__name">Engel Eilyn Bernal Garrido</h3>
+                <p class="team__role">Jefe de Marketing</p>
+                <p class="team__description">
+                    Diseña estrategias de mercadeo para posicionar la marca y atraer nuevos clientes.
+                </p>
+            </article>
+
+            <!-- 5 -->
+            <article class="team__card">
+                <div class="team__avatar">JG</div>
+                <h3 class="team__name">Joseph Nicolas Guevara Garnica</h3>
+                <p class="team__role">Jefe de RRHH</p>
+                <p class="team__description">
+                    Gestiona el talento humano, fomentando bienestar, desarrollo y retención.
+                </p>
+            </article>
+
+            <!-- 6 -->
+            <article class="team__card">
+                <div class="team__avatar">IT</div>
+                <h3 class="team__name">Instant Talent</h3>
+                <p class="team__role">Equipo Complementario</p>
+                <p class="team__description">
+                    Profesionales de apoyo en áreas administrativas, operativas y estratégicas.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+    <!-- Sección de Especificaciones -->
+
+
+
+
+
+    <section id="especificaciones">
+        <div class="container">
+            <div class="especificaciones-content">
+                <h2 class="section-title">Servicio integral para tu negocio</h2>
+                <p class="especificaciones-text">
+                    En Instant Talent, ofrecemos soluciones completas en 
+                    <strong>outsourcing, gestión del talento y capacitación</strong>, diseñadas para optimizar 
+                    tus procesos, reducir costos y fortalecer el crecimiento de tu empresa con personal 
+                    calificado y comprometido.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Seccion Servicios -->
+
+
+
+
+
+    <section id="servicios">
+        <div class="container">
+            <div class="services__grid">
+                
+                <div class="service-card">
+                    <div class="service-icon-placeholder">
+                        <span class="icon-stack">👨‍🎓</span> </div>
+                    <h3 class="service-card-title">Reclutamiento y Selección</h3>
+                    <p class="service-card-description">
+                        Encontramos el perfil ideal para cada cargo. Aplicamos procesos de selección profesionales, evaluaciones por 
+                        competencias y filtros personalizados para asegurar el mejor talento para tu organización.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-placeholder">
+                        <span class="icon-circle">📚</span> </div>
+                    <h3 class="service-card-title">Capacitación y Desarrollo</h3>
+                    <p class="service-card-description">
+                        Impulsamos el crecimiento del talento de tu empresa a través de programas de formación y desarrollo continuo. 
+                        Diseñamos capacitaciones adaptadas a tus necesidades, fortaleciendo competencias, liderazgo y productividad para 
+                        alcanzar los objetivos organizacionales.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-placeholder">
+                        <span class="icon-triangle">💼</span> </div>
+                    <h3 class="service-card-title">Outsourcing de Personal Operativo</h3>
+                    <p class="service-card-description">
+                        Optimizamos tu operación con soluciones de outsourcing especializado. Nos encargamos del reclutamiento, contratación 
+                        y administración de personal operativo calificado, garantizando eficiencia, cumplimiento y resultados inmediatos 
+                        para tu negocio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Sección Beneficios -->
+
+
+
+
+    <section id="beneficios">
+        <div class="container">
+            <div class="beneficios-layout">
+                <div class="beneficios-visual">
+                    <span class="icon-beneficios">💰</span>
+                </div>
+                
+                <div class="beneficios-contenido">
+                    <h2>Beneficios de Elegirnos</h2>
+                    <ul class="beneficios-lista">
+                        <li class="beneficio-item">Reducción de costos y tiempos de contratación.</li>
+                        <li class="beneficio-item">Procesos confiables y 100% legales.</li>
+                        <li class="beneficio-item">Personal calificado y evaluado por competencias.</li>
+                        <li class="beneficio-item">Asesoría continua y acompañamiento personalizado.</li>
+                        <li class="beneficio-item">Adaptabilidad a las necesidades de cada cliente.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Sección Proceso -->
+
+
+
+
+
+    <section id="proceso">
+        <div class="container">
+            <div class="proceso-visual">
+                <span class="icon-engranaje">⚙️</span>
+            </div>
+            <div class="proceso-header">
+                <h2>Cómo Funciona Nuestro Proceso</h2>
+            </div>  
+                <ul class="proceso-pasos">
+                    <li class="paso-item"><strong>1.</strong> La empresa solicita el personal.</li>
+                    <li class="paso-item"><strong>2.</strong> Instant Talent realiza la búsqueda y selección.</li>
+                    <li class="paso-item"><strong>3.</strong> Se presenta el candidato ideal.</li>
+                    <li class="paso-item"><strong>4.</strong> Se firma el contrato y se inicia la gestión.</li>
+                </ul>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Sección Compromiso -->
+
+
+
+
+
+    <section id="compromiso">
+        <div class="container">
+            <div class="compromiso-contenido">
+                <h2>Nuestro Compromiso</h2>
+                <p class="compromiso-texto">
+                    En Instant Talent trabajamos con pasión y responsabilidad para conectar a las empresas con el 
+                    talento que necesitan, fortaleciendo el crecimiento de ambos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Sección Contacto y Footer -->
+
+
+
+
+
+
+<footer id="contacto" class="footer" role="contentinfo">
+
+    <div class="footer__container">
+
+        <!-- Contacto -->
+        <div class="footer-contact">
+            <h3 class="contact-title">Ponte en contacto</h3>
+
+            <p class="contact-group">
+                <strong>Visítanos</strong><br>
+                <span class="contact-detail">Bogotá, Colombia</span>
+            </p>
+
+            <p class="contact-group">
+                <strong>Llámanos</strong><br>
+                <span class="contact-detail">(+57) ### #### ###</span>
+            </p>
+
+            <p class="contact-group">
+                <strong>Email</strong><br>
+                <span class="contact-detail">www.munetonsantiago@gmail.com</span>
+            </p>
+        </div>
+
+        <!-- Redes -->
+        <div class="footer__social">
+            <a href="#" aria-label="LinkedIn" class="footer__social-link">
+                <!-- Icono LinkedIn -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" fill="currentColor"/>
+                </svg>
+            </a>
+
+            <a href="#" aria-label="Twitter" class="footer__social-link">
+                <!-- Icono Twitter -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M22.46 6c-.85.38-1.75.63-2.7.75a4.7 4.7 0 0 0 2.07-2.6c-.9.54-1.9.93-3 1.14a4.7 4.7 0 0 0-8 4.29A13.36 13.36 0 0 1 1.64 4.48a4.7 4.7 0 0 0 1.46 6.28 4.65 4.65 0 0 1-2.13-.59v.06a4.7 4.7 0 0 0 3.77 4.6 4.7 4.7 0 0 1-2.12.08 4.7 4.7 0 0 0 4.39 3.26A9.42 9.42 0 0 1 .96 19.74a13.3 13.3 0 0 0 7.21 2.11c8.65 0 13.38-7.17 13.38-13.38 0-.2 0-.4-.02-.6A9.54 9.54 0 0 0 24 5.34a9.36 9.36 0 0 1-2.7.74z" fill="currentColor"/>
+                </svg>
+            </a>
+
+            <a href="#" aria-label="Instagram" class="footer__social-link">
+                <!-- Icono Instagram -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" fill="currentColor"/>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer__credits">
+        <p>&copy; 2025 Instant Talent Outsourcing. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
