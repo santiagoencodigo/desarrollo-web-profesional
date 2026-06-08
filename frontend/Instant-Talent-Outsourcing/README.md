@@ -147,7 +147,7 @@ Además se utiliza `clamp()` para tipografía fluida y `grid-template-columns` c
 > ![Vista previa en móvil](../../Assets/img/01-instant-talent/07-mobile.png)
 
 **Para visualizar el proyecto en línea:**  
-[Demo en GitHub Pages](https://santiagoencodigo.github.io/Instant-Talent-Outsourcing/)
+[Demo en GitHub Pages](https://santiagoencodigo.github.io/Desarrollo-Web-Profesional/frontend/Instant-Talent-Outsourcing/index.html)
 
 ## Posibles Mejoras Futuras
 
