@@ -1,0 +1,496 @@
+
+/* ============================================================
+    1. RESET Y BASE
+    ============================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #0A0A0F;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    position: relative;
+    padding-top: 76px;
+    padding-bottom: 50px; /* espacio para el footer */
+}
+
+/* ============================================================
+    2. FONDO DE PARTÍCULAS
+    ============================================================ */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* ============================================================
+    3. NAVBAR (con enlaces a Inicio y Proyectos)
+    ============================================================ */
+.navbar-custom {
+    background-color: #0A0A0F;
+    border-bottom: 1px solid #2A2A35;
+    padding: 0.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    border-radius: 4px;
+    transition: opacity 0.2s;
+}
+.navbar-logo:hover {
+    opacity: 0.8;
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: #A0A0A0;
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    transition: color 0.25s ease;
+}
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-link.active {
+    color: #FFFFFF;
+}
+.navbar-custom .navbar-toggler {
+    border-color: #2A2A35;
+    color: #A0A0A0;
+}
+.navbar-custom .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ============================================================
+    4. CONTENEDOR DEL GRAFO
+    ============================================================ */
+#graph-container {
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    height: calc(100vh - 76px - 50px); /* resto navbar y footer */
+}
+svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+}
+svg:active {
+    cursor: grabbing;
+}
+
+/* ============================================================
+    5. NODOS Y ENLACES
+    ============================================================ */
+.node-group {
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+.node-group:hover {
+    filter: drop-shadow(0 0 12px rgba(160, 160, 160, 0.6));
+}
+.node-circle {
+    fill: #1A1A24;
+    stroke: #7A7A8A;
+    stroke-width: 1.5;
+    transition: stroke 0.3s, fill 0.3s;
+}
+.node-group:hover .node-circle {
+    stroke: #ffffff;
+    fill: #2A2A35;
+}
+.node-label {
+    fill: #e0e0e0;
+    font-size: 10px;
+    font-weight: 500;
+    text-anchor: middle;
+    dominant-baseline: central;
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 8px rgba(0,0,0,0.9);
+}
+.link {
+    stroke: #4A4A5A;
+    stroke-width: 1.2;
+    stroke-opacity: 0.25;
+    transition: stroke-opacity 0.4s, stroke 0.4s;
+}
+.link.highlight {
+    stroke-opacity: 0.9;
+    stroke: #c0c0d0;
+}
+.link.dim {
+    stroke-opacity: 0.08;
+}
+
+/* ============================================================
+    6. TOOLTIP / CARD DE INFORMACIÓN
+    ============================================================ */
+.node-tooltip {
+    position: absolute;
+    background: rgba(16, 16, 24, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid #3A3A4A;
+    border-radius: 12px;
+    padding: 16px;
+    color: #ddd;
+    font-size: 13px;
+    max-width: 280px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s ease, transform 0.2s ease;
+    transform: scale(0.96);
+    z-index: 20;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.7);
+    line-height: 1.5;
+}
+.node-tooltip.visible {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+.node-tooltip .tooltip-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: #1A1A24;
+}
+.node-tooltip .tooltip-img.error {
+    display: none;
+}
+.node-tooltip .tooltip-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 4px;
+}
+.node-tooltip .tooltip-desc {
+    font-size: 0.85rem;
+    color: #b0b0b0;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.node-tooltip .tooltip-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.node-tooltip .tooltip-buttons a {
+    background: transparent;
+    color: #7A7A8A;
+    border: 1px solid #7A7A8A;
+    font-weight: 500;
+    font-size: 0.65rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.25rem 1rem;
+    border-radius: 50px;
+    transition: background 0.25s, color 0.25s, border-color 0.25s;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.node-tooltip .tooltip-buttons a:hover {
+    background: #7A7A8A;
+    color: #0A0A0F;
+    border-color: #7A7A8A;
+}
+.node-tooltip .tooltip-buttons a.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* ============================================================
+    7. BOTÓN CENTRAR (flotante, destacado)
+    ============================================================ */
+.btn-center-container {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 15;
+    text-align: center;
+    pointer-events: none;
+}
+.btn-center {
+    background: rgba(20, 20, 30, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid #7A7A8A;
+    color: #e0e0e0;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.6rem 1.8rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    pointer-events: auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+.btn-center:hover {
+    background: #7A7A8A;
+    color: #0A0A0F;
+    border-color: #7A7A8A;
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(122, 122, 138, 0.3);
+}
+.btn-center:active {
+    transform: scale(0.95);
+}
+
+/* ============================================================
+    8. INSTRUCCIONES DE INTERACCIÓN (esquina inferior izquierda)
+    ============================================================ */
+.interaction-tips {
+    position: fixed;
+    bottom: 60px;
+    left: 20px;
+    z-index: 15;
+    background: rgba(10, 10, 15, 0.75);
+    backdrop-filter: blur(6px);
+    border: 1px solid #2A2A35;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.7rem;
+    color: #aaa;
+    line-height: 1.6;
+    max-width: 180px;
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: 0.02em;
+}
+.interaction-tips strong {
+    color: #ddd;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.75rem;
+}
+.interaction-tips span {
+    display: block;
+}
+.interaction-tips .key {
+    display: inline-block;
+    background: #1A1A24;
+    border: 1px solid #3A3A4A;
+    border-radius: 3px;
+    padding: 0 6px;
+    font-size: 0.65rem;
+    color: #ccc;
+    margin: 0 2px;
+}
+
+/* ============================================================
+    9. FOOTER (fijo abajo)
+    ============================================================ */
+.footer-custom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(10, 10, 15, 0.85);
+    backdrop-filter: blur(6px);
+    border-top: 1px solid #2A2A35;
+    padding: 0.6rem 0;
+    text-align: center;
+    color: #6C6C7A;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+}
+.footer-custom a {
+    color: #7A7A8A;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-custom a:hover {
+    color: #ffffff;
+}
+
+/* ============================================================
+    10. RESPONSIVE: ajustes para tablets y móviles
+    ============================================================ */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+    .navbar-custom .navbar-nav .nav-link {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.5rem;
+    }
+    .btn-center {
+        font-size: 0.75rem;
+        padding: 0.5rem 1.4rem;
+    }
+    .interaction-tips {
+        font-size: 0.65rem;
+        padding: 8px 12px;
+        max-width: 150px;
+    }
+    .interaction-tips strong {
+        font-size: 0.7rem;
+    }
+    .node-label {
+        font-size: 9px;
+    }
+    .node-tooltip {
+        max-width: 240px;
+        padding: 14px;
+        font-size: 12px;
+    }
+    .node-tooltip .tooltip-img {
+        height: 100px;
+    }
+    .node-tooltip .tooltip-title {
+        font-size: 0.95rem;
+    }
+    .node-tooltip .tooltip-desc {
+        font-size: 0.8rem;
+        -webkit-line-clamp: 3;
+    }
+}
+
+/* Móviles grandes y pequeños */
+@media (max-width: 600px) {
+    body {
+        padding-top: 64px; /* navbar más compacto */
+        padding-bottom: 40px;
+    }
+    .navbar-custom {
+        padding: 0.3rem 0;
+    }
+    .navbar-logo {
+        height: 32px;
+    }
+    .navbar-custom .navbar-nav .nav-link {
+        font-size: 0.65rem;
+        padding: 0.3rem 0.5rem;
+    }
+    #graph-container {
+        height: calc(100vh - 64px - 40px);
+    }
+    .node-circle {
+        r: 16px; /* reducimos tamaño de nodos */
+    }
+    .node-label {
+        font-size: 7px;
+        dy: 24px;
+    }
+    .link {
+        stroke-width: 1;
+    }
+    .node-tooltip {
+        max-width: 200px;
+        padding: 10px;
+        font-size: 11px;
+        border-radius: 8px;
+    }
+    .node-tooltip .tooltip-img {
+        height: 70px;
+    }
+    .node-tooltip .tooltip-title {
+        font-size: 0.85rem;
+    }
+    .node-tooltip .tooltip-desc {
+        font-size: 0.75rem;
+        -webkit-line-clamp: 3;
+    }
+    .node-tooltip .tooltip-buttons a {
+        font-size: 0.55rem;
+        padding: 0.2rem 0.7rem;
+    }
+    .btn-center-container {
+        bottom: 60px;
+    }
+    .btn-center {
+        font-size: 0.65rem;
+        padding: 0.4rem 1rem;
+    }
+    .interaction-tips {
+        display: none; /* ocultamos en móviles para no saturar */
+    }
+    .footer-custom {
+        font-size: 0.6rem;
+        padding: 0.4rem 0;
+    }
+}
+
+/* Móviles muy pequeños (menos de 400px) */
+@media (max-width: 400px) {
+    .node-circle {
+        r: 12px;
+    }
+    .node-label {
+        font-size: 6px;
+        dy: 18px;
+    }
+    .node-tooltip {
+        max-width: 160px;
+        padding: 8px;
+        font-size: 10px;
+    }
+    .node-tooltip .tooltip-img {
+        height: 50px;
+    }
+    .node-tooltip .tooltip-title {
+        font-size: 0.75rem;
+    }
+    .node-tooltip .tooltip-desc {
+        font-size: 0.65rem;
+        -webkit-line-clamp: 2;
+    }
+    .node-tooltip .tooltip-buttons a {
+        font-size: 0.5rem;
+        padding: 0.15rem 0.5rem;
+    }
+    .btn-center {
+        font-size: 0.6rem;
+        padding: 0.3rem 0.8rem;
+    }
+}
+
+/* Ajuste para pantallas táctiles (mayor área de clic) */
+@media (hover: none) and (pointer: coarse) {
+    .node-circle {
+        r: 26px; /* más grande para dedos */
+    }
+    .node-label {
+        font-size: 10px;
+        dy: 36px;
+    }
+    .node-tooltip {
+        pointer-events: none; /* en táctil no se puede hacer hover, pero el tooltip se muestra al tocar? Mejor dejamos solo clic */
+    }
+}
+
+/* ============================================================
+    11. MEJORA DE ACCESIBILIDAD EN TÁCTIL
+    ============================================================ */
+@media (hover: none) {
+    .node-group {
+        cursor: default;
+    }
+    .node-tooltip.visible {
+        pointer-events: none; /* evitamos que interfiera con clics */
+    }
+}
