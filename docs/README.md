@@ -26,4 +26,4 @@ Bienvenido a la sección de documentación de mi viaje de aprendizaje en desarro
 
 ---
 
-> gracias
+> Gracias por leer.

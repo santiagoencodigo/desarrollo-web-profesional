@@ -97,7 +97,7 @@ const projectData = [
         id: 12,
         nombre: "12. Instant Talent Outsourcing",
         descripcion: "Módulo de desarrollo en HTML, CSS y JavaScript Vanilla. Simulación de una empresa de outsourcing y gestión del talento humano (Instant Talent) con diseño responsive, menú móvil, animaciones y secciones informativas.",
-        imagen: "./assets/img/instant-talent/01-header.PNG",  // Respeta mayúsculas si el archivo es .PNG
+        imagen: "./assets/img/instant-talent/01-header.png",  // Respeta mayúsculas si el archivo es .PNG
         urlDoc: "https://github.com/santiagoencodigo/Desarrollo-Web-Profesional/tree/main/frontend/Instant-Talent-Outsourcing",
         urlProyecto: "./projects/instant-talent-outsourcing/index.html"
     }
