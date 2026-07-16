@@ -1,0 +1,123 @@
+<!-- 
+    Construye un clon de Google usando HTML y CSS. Aprende a estructurar
+    y estilizar un sitio web completo, desde el header hasta el footer, 
+    usando técnicas de maquetación como Flexbox y Grid. Ideal para afianzar 
+    fundamentos. 
+-->
+
+<!DOCTYPE html>
+    <!--
+        La primera linea de codigo en anteriores HTML era mucho más larga,
+        por lo que asi sabemos que esto es HTML5. 
+
+        En el pasado la etiqueta inicial que se debia memorizar era:
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+        Tomado de: "http://www.w3.org/TR/html4/strict.dtd"> 
+        -->
+
+<!-- Iniciamos Contenedor HTML por lo que esto lo denominamos: Arquitectura HTML-->
+<html lang="en">
+<head> 
+    <!-- 
+    HEAD -> Esta etiqueta contiene el conjunto de elementos que no es visible para el usuario
+    Fundamental para manejar dependencias y elementos META para que el navegador pueda
+    interpretarlo.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+        <!-- 
+            Los elementos "META" y las dependencias se van a interpretar el navegador para que el proyecto
+            funcione
+         -->
+    <link rel="stylesheet" href="./main.css"> <!-- Esta es la forma de linkear nuestro archivo CSS con el HTML -->
+
+</head>
+<body> 
+    <!--
+        Aqui va a ir todo el contenido que es visual para el usuario,
+        siendo el contenido que este va a ver e interactuar.
+    -->     
+    <header>
+        <!-- 
+            Header es una etiqueta semantica, nos dice donde estamos trabajando, en qué
+            elemento de la pagina estamos trabajando.
+
+            No es tan bueno utilizar sólo etiquetas <div>
+
+            Esta etiqueta sólo tiene DOS ELEMENTOS: <nav>
+            sabemos que es navegación cuando son links que nos llevan a vinculos.
+            En google hay 4 iniciales arriba.
+        -->
+
+        <nav>
+            <ul class="nav-right-section"> <!-- La clase permite aplicar estilos a varios elementos a la vez y reutilizarlos en el proyecto -->
+                    <!-- <ul> es una etiqueta contenedora de listas desorganizadas. -->
+                    <!-- <li> "list items", la forma de escribirlo aqui es li*4 -->
+                    <!-- <a> "Ancla" se compone de un href = referencia -->
+                <li>
+                    <a target="_blank" href="https://mail.google.com/mail/u/0/?pli=1#search/www.munetonsantiago%40gmail.com?compose=new">Gmail</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://images.google.com/?hl=es-419">Imágenes</a>
+                </li>
+                <li class="menu-icon">
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/santiagoencodigo">
+                        <img src="https://lh3.googleusercontent.com/ogw/AF2bZyjEz4KX3ViCDAGNnBgbTjI5YOAkN_g94FlSsXlTIXXvZ_U=s64-c-mo" alt="Github-Profile-Santiagoencodigo">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Esta etiqueta es para poner todo el contenido principal de nuestro proyecto.
+        Va despues del Header y antes del Footer, usualmente se separa con sections
+        -->
+        <section class="main-logo">
+            <img src="https://www.google.com/logos/doodles/2023/teachers-day-2023-nov-24-6753651837109973-2xa.gif" 
+            alt="Doodle Google">
+        </section>
+        <section class="main-input">
+            <div class="main-input-container"> <!-- Me permite separar los elementos dentro del input el cual son las imagenes -->
+                <span class="search-icon"></span>
+                <input type="text">
+                <a class="micro-icon" href=""></a>
+            </div>
+        </section>
+        <section class="main-buttons">
+            <div class=""><button>Buscar con Google</button></div>
+            <div class=""><button>Me siento con Suerte</button></div>
+        </section>
+    </main>
+
+<!-- Es todo lo que esta debajo o al fin de la pagina, generalmente se utiliza para dejar vinculos. -->
+
+    <footer>    
+        <ul class="footer-left">
+            <li><a href="https://business.google.com/es-all/google-ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&fg=1" target="_blank">Publicidad</a></li>
+
+            <li><a href="https://business.google.com/es-all/business-profile/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&fg=1" target="_blank">Negocios</a></li>
+
+            <li><a href="https://github.com/santiagoencodigo/Desarrollo-Web-Profesional/blob/main/docs/1-introducci%C3%B3n-a-la-web-historia-y-funcionamiento-de-internet.md" target="_blank">Introducción a la web</a></li>
+        </ul>
+
+        <ul class="footer-center">
+            <li>
+                <a target="_blank" href="https://github.com/santiagoencodigo/Desarrollo-Web-Profesional/blob/main/docs/2-html-y-css-clon-google.md">Documentación<a>      
+            </li>
+            
+            <li><a href="../../index.html">Home</a></li>
+        </ul>
+
+        <ul class="footer-right">
+            <li><a href="https://santiagoencodigo.github.io/portfolio-santiagoencodigo/" target="_blank">Portafolio</a></li>
+            <li><a href="https://policies.google.com/privacy?hl=es-419&fg=1" target="_blank">Privacidad</a></li>
+            <li><a href="https://policies.google.com/terms?hl=es-419&fg=1" target="_blank">Condiciones</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

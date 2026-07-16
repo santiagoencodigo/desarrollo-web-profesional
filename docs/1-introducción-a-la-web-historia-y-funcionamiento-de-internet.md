@@ -2,7 +2,7 @@
 
 <div style="text-align:center;"><h1 id="main-title">Introducción a la Web: Historia y Funcionamiento de Internet</h1></div>
 
-[Haz click aqui, para devolverte al menú principal de esta ruta de aprendizaje.](https://github.com/santiagoencodigo/Desarrollo-Web-Profesional "Link GitHub Repo: Desarrollo Web Profesional")
+[Haz click aqui, para devolverte al menú principal de esta ruta de aprendizaje.](https://github.com/santiagoencodigo/desarrollo-web-profesional "Link GitHub Repo: Desarrollo Web Profesional")
 
 Los seres humanos estamos cada vez más inmersos en la tecnología, utilizándola de manera cotidiana en múltiples actividades. Sin embargo, en la medida en que nos habituamos a ciertas herramientas, solemos pasar por alto su esencia y los principios que hacen posible su funcionamiento.
 

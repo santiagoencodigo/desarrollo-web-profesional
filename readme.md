@@ -1,10 +1,10 @@
 <div style="text-align:center;"><h1 id="main-title">Desarrollo Web Profesional</h1></div>
 
 **Acceso directo:**  
-[Pagina principal del proyecto](https://santiagoencodigo.github.io/desarrollo-web-profesional/)  
+[Página principal del proyecto](https://santiagoencodigo.github.io/desarrollo-web-profesional/)  
 [Mapa neuronal interactivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/sitemap.html)
 
-<img src="./Assets/img/00-readme/01-indexhtmlview.png">
+<img src="./assets/img/proyectos/01-indexhtmlview.png" alt="Vista del index.html" loading="lazy" width="800">
 
 ---
 
@@ -26,9 +26,9 @@ Construido con D3.js y partículas animadas, este mapa conecta todos los proyect
 - Hacer clic para abrir el proyecto o la documentación correspondiente.
 - Arrastrar nodos para reorganizar la red.
 - Usar la rueda del ratón para hacer zoom.
-- Boton "Centrar vista" para restaurar la posicion inicial.
+- Botón "Centrar vista" para restaurar la posición inicial.
 
-<img src="./Assets/img/00-readme/02-sitemap.png">
+<img src="./assets/img/proyectos/02-sitemap.png" alt="Mapa neuronal" loading="lazy" width="800">
 
 ---
 
@@ -36,14 +36,27 @@ Construido con D3.js y partículas animadas, este mapa conecta todos los proyect
 
 ```
 Desarrollo-Web-Profesional/
-├── Assets/               # Imágenes, PDFs y recursos estáticos
-├── docs/                 # Documentación en Markdown de cada módulo
-├── pages/                # Proyectos prácticos (Google Clone, Portfolio, etc.)
-├── frontend/             # Proyectos frontend completos (AnimeShop, Instant Talent)
+├── assets/               # Recursos estáticos (imágenes, CSS, JS, PDF, media)
+│   ├── css/              # Estilos (style.css, sitemap.css)
+│   ├── img/              # Imágenes organizadas por categoría
+│   │   ├── animeshop/    # Capturas de AnimeShop
+│   │   ├── icons/        # Iconos, logos y foto de perfil
+│   │   ├── instant-talent/ # Capturas de Instant Talent
+│   │   └── proyectos/    # Capturas de todos los proyectos y documentación
+│   ├── js/               # main.js (lógica del mapa neuronal)
+│   ├── media/            # Audio y vídeo
+│   └── pdf/              # CV y proximamente otros documentos descargables
+├── docs/                 # Documentación en Markdown de conocimientos teóricos.
+├── projects/             # Proyectos prácticos (cada uno con su propio HTML/CSS/JS y README)
+│   ├── animeshop/
+│   ├── fundamentos-html/
+│   ├── fundamentos-js/
+│   ├── google-clone/
+│   ├── instant-talent-outsourcing/
+│   ├── portfolio/
+│   └── programacion-basica/
 ├── index.html            # Página principal (portafolio y lista de proyectos)
 ├── sitemap.html          # Mapa neuronal interactivo (grafo de conocimiento)
-├── main.js               # Lógica del mapa neuronal (D3.js)
-├── Assets/sitemap.css    # Estilos del mapa neuronal
 └── README.md             # Este archivo
 ```
 
@@ -97,138 +110,144 @@ También puedes explorar el mapa neuronal abriendo `sitemap.html` directamente.
 
 ---
 
-## Modulos de aprendizaje
+## Módulos de aprendizaje
 
 ### Historia y funcionamiento de Internet
 
-- [Documentacion](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/1-introduccion-a-la-web-historia-y-funcionamiento-de-internet.md)
+- [Documentación](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/1-introduccion-a-la-web-historia-y-funcionamiento-de-internet.md)
 
-Apuntes sobre bits, bytes, codigo maquina, ASCII, RGB, Unicode, ARPANET, protocolos HTTP/HTTPS, navegadores, W3C y evolucion de la World Wide Web.
+Apuntes sobre bits, bytes, código máquina, ASCII, RGB, Unicode, ARPANET, protocolos HTTP/HTTPS, navegadores, W3C y evolución de la World Wide Web.
 
-<img src="./Assets/img/docs-11-fundamentos-web-historia-y-funcionamiento-de-internet.PNG" alt="Apuntes de historia y funcionamiento de Internet" loading="lazy" width="600">
+<img src="./assets/img/proyectos/docs-01-fundamentos-web.png" alt="Apuntes de historia y funcionamiento de Internet" loading="lazy" width="600">
 
 ---
 
-### HTML y CSS practico: Clon de Google
+### HTML y CSS práctico: Clon de Google
 
-- [Documentacion](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/2-html-y-css-clon-google.md)
-- [Proyecto en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/pages/01-html-y-css-google-clone/index.html)
+- [Documentación](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/2-html-y-css-clon-google.md)
+- [Proyecto en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/projects/google-clone/index.html)
 
-Clon de la pagina principal de Google desarrollado con HTML5 y CSS3.  
-Practica de estructura semantica, Flexbox, Grid, metodologia BEM y uso de DevTools.
+Clon de la página principal de Google desarrollado con HTML5 y CSS3.  
+Práctica de estructura semántica, Flexbox, Grid, metodología BEM y uso de DevTools.
 
-<img src="./Assets/img/1. Clon de Google.PNG" alt="Clon de Google" loading="lazy" width="600">
+<img src="./assets/img/proyectos/04-google-clone.png" alt="Clon de Google" loading="lazy" width="600">
 
 ---
 
 ### Fundamentos de CSS
 
-- [Documentacion](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/3-fundamentos-css.md)
-- [Proyecto en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/pages/02-fundamentos-css/index.html)
+- [Documentación](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/3-fundamentos-css.md)
+- [Proyecto en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/projects/portfolio/index.html)
 
-Exploracion de tipografia, colores, layouts responsivos, animaciones y efectos visuales para construir interfaces atractivas y funcionales.
+Exploración de tipografía, colores, layouts responsivos, animaciones y efectos visuales para construir interfaces atractivas y funcionales.
 
-<img src="./Assets/img/9. Proyecto - Portafolio - Santiagoencodigo.png" alt="Portfolio CSS" loading="lazy" width="600">
+<img src="./assets/img/proyectos/05-portafolio.png" alt="Portfolio CSS" loading="lazy" width="600">
 
 ---
 
 ### HyperText Markup Language (HTML)
 
-- [Documentacion](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/4-html.md)
-- [Proyecto en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/pages/03-html/index.html)
+- [Documentación](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/4-html.md)
+- [Proyecto en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/projects/fundamentos-html/index.html)
 
-Apuntes sobre HTML semantico, accesibilidad, SEO y buenas practicas de estructuración.
+Apuntes sobre HTML semántico, accesibilidad, SEO y buenas prácticas de estructuración.
 
-<img src="./Assets/img/10-fundamentos-html.PNG" alt="Fundamentos HTML" loading="lazy" width="600">
-
----
-
-### Computadores e informatica basica
-
-- [Documentacion](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/5-computadores-e-informatica-basica.md)
-
-Conceptos basicos de computacion: funcionamiento de una computadora, instalacion de software, navegacion segura, gestion de archivos y ciberseguridad esencial.
-
-<img src="./Assets/img/docs-12-computadores-e-informatica-basica.PNG" alt="Apuntes computadores e informatica basica" loading="lazy" width="600">
+<img src="./assets/img/proyectos/03-fundamentos-html.png" alt="Fundamentos HTML" loading="lazy" width="600">
 
 ---
 
-### Fundamentos de ingenieria de software
+### Computadores e informática básica
 
-- [Documentacion](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/6-fundamentos-ingenieria-software.md)
+- [Documentación](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/5-computadores-e-informatica-basica.md)
 
-Recopilacion de conceptos clave: bits, bytes, internet, chips, IA, sistemas y arquitectura de software.
+Conceptos básicos de computación: funcionamiento de una computadora, instalación de software, navegación segura, gestión de archivos y ciberseguridad esencial.
 
-<img src="./Assets/img/docs-13-fundamentos-de-ingenieria-de-software.PNG" alt="Fundamentos de ingenieria de software" loading="lazy" width="600">
+<img src="./assets/img/proyectos/docs-02-computadores-e-informatica-basica.png" alt="Apuntes computadores e informática básica" loading="lazy" width="600">
 
 ---
 
-### Programacion basica (Mokepon)
+### Fundamentos de ingeniería de software
 
-- [Documentacion](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/7-programacion-basica.md)
-- [Proyecto en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/pages/04-programacion-basica/02-mokepon/mokepon.html)
+- [Documentación](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/6-fundamentos-ingenieria-software.md)
 
-Videojuego estilo piedra-papel-tijera con tematica de mascotas. Desarrollado con JavaScript, HTML y CSS para consolidar logica de programacion, manipulacion del DOM y eventos.
+Recopilación de conceptos clave: bits, bytes, internet, chips, IA, sistemas y arquitectura de software.
 
-<img src="./Assets/img/code-1-mokepon.PNG" alt="Codigo de Mokepon" loading="lazy" width="600">
+<img src="./assets/img/proyectos/docs-03-fundamentos-de-ingenieria-de-software.png" alt="Fundamentos de ingeniería de software" loading="lazy" width="600">
+
+---
+
+### Programación básica (Mokepon)
+
+- [Documentación](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/7-programacion-basica.md)
+- [Proyecto en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/projects/programacion-basica/02-mokepon/index.html)
+
+Videojuego estilo piedra-papel-tijera con temática de mascotas. Desarrollado con JavaScript, HTML y CSS para consolidar lógica de programación, manipulación del DOM y eventos.
+
+<img src="./assets/img/proyectos/07-mokepon.png" alt="Código de Mokepon" loading="lazy" width="600">
 
 *Estado: en proceso de mejora continua.*
 
 ---
 
-### Terminal y linea de comandos
+### Terminal y línea de comandos
 
-- [Documentacion](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/8-terminal-y-linea-de-comandos.md)
+- [Documentación](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/8-terminal-y-linea-de-comandos.md)
 
-Uso de la terminal (BASH) para navegacion, manipulacion de archivos, permisos, procesos, grep, curl y personalizacion del shell.
+Uso de la terminal (BASH) para navegación, manipulación de archivos, permisos, procesos, grep, curl y personalización del shell.
 
 *Estado: en proceso.*
+
+<img src="./assets/img/proyectos/docs-04-terminal-y-linea-de-comandos.png" alt="Apuntes terminal" loading="lazy" width="600">
 
 ---
 
 ### Fundamentos de JavaScript
 
-- Documentacion (pendiente)
-- Proyecto (pendiente)
+- [Documentación](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/9-fundamentos-js.md) (pendiente)
+- [Proyecto en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/projects/fundamentos-js/index.html) (pendiente)
 
-*Estado: proximamente.*
+*Estado: próximamente.*
+
+<img src="./assets/img/proyectos/docs-05-fundamentos-js.png" alt="Fundamentos JS" loading="lazy" width="600">
 
 ---
 
 ### Control de versiones con Git y GitHub
 
-- Documentacion (pendiente)
+- [Documentación](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/10-git-y-github.md) (pendiente)
 
-*Estado: proximamente.*
+*Estado: próximamente.*
+
+<img src="./assets/img/proyectos/docs-06-git-y-github.png" alt="Git y GitHub" loading="lazy" width="600">
 
 ---
 
 ### Frontend: AnimeShop
 
-- [Repositorio](https://github.com/santiagoencodigo/desarrollo-web-profesional/tree/main/frontend/AnimeShop)
-- [Demo en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/frontend/AnimeShop/index.html)
+- [Repositorio](https://github.com/santiagoencodigo/desarrollo-web-profesional/tree/main/projects/animeshop)
+- [Demo en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/projects/animeshop/index.html)
 
-Landing page tematica de anime (One Piece y Naruto) con HTML semantico, CSS moderno, Bootstrap 5 y JavaScript Vanilla.  
-Incluye hero animado, catalogo dinamico, carruseles, filtros y carrito de compras funcional.
+Landing page temática de anime (One Piece y Naruto) con HTML semántico, CSS moderno, Bootstrap 5 y JavaScript Vanilla.  
+Incluye hero animado, catálogo dinámico, carruseles, filtros y carrito de compras funcional.
 
-<img src="./Assets/img/00-AnimeShop/01-hero.png" alt="Hero de AnimeShop" loading="lazy" width="600">
-<img src="./Assets/img/00-AnimeShop/02-productos-destacados.PNG" alt="Productos destacados" loading="lazy" width="600">
-<img src="./Assets/img/00-AnimeShop/03-newsletter.PNG" alt="Newsletter" loading="lazy" width="600">
+<img src="./assets/img/animeshop/01-hero.png" alt="Hero de AnimeShop" loading="lazy" width="600">
+<img src="./assets/img/animeshop/02-productos-destacados.png" alt="Productos destacados" loading="lazy" width="600">
+<img src="./assets/img/animeshop/03-newsletter.png" alt="Newsletter" loading="lazy" width="600">
 
 ---
 
 ### Frontend: Instant Talent Outsourcing
 
-- [Repositorio](https://github.com/santiagoencodigo/desarrollo-web-profesional/tree/main/frontend/Instant-Talent-Outsourcing)
-- [Demo en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/frontend/Instant-Talent-Outsourcing/index.html)
+- [Repositorio](https://github.com/santiagoencodigo/desarrollo-web-profesional/tree/main/projects/instant-talent-outsourcing)
+- [Demo en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/projects/instant-talent-outsourcing/index.html)
 
-Sitio corporativo para una empresa ficticia de outsourcing y gestion del talento humano.  
-Desarrollado con HTML semantico, CSS (Grid, Flexbox, variables) y JavaScript Vanilla.  
-Incluye menu hamburguesa, efectos parallax, animaciones y secciones completas (servicios, valores, politicas, equipo directivo). Totalmente responsive.
+Sitio corporativo para una empresa ficticia de outsourcing y gestión del talento humano.  
+Desarrollado con HTML semántico, CSS (Grid, Flexbox, variables) y JavaScript Vanilla.  
+Incluye menú hamburguesa, efectos parallax, animaciones y secciones completas (servicios, valores, políticas, equipo directivo). Totalmente responsive.
 
-<img src="./Assets/img/01-instant-talent/01-header.PNG" alt="Header de Instant Talent" loading="lazy" width="600">
-<img src="./Assets/img/01-instant-talent/02-mision-y-vision.PNG" alt="Mision y vision" loading="lazy" width="600">
-<img src="./Assets/img/01-instant-talent/03-valores-corporativos.PNG" alt="Valores corporativos" loading="lazy" width="600">
+<img src="./assets/img/instant-talent/01-header.PNG" alt="Header de Instant Talent" loading="lazy" width="600">
+<img src="./assets/img/instant-talent/02-mision-y-vision.png" alt="Misión y visión" loading="lazy" width="600">
+<img src="./assets/img/instant-talent/03-valores-corporativos.png" alt="Valores corporativos" loading="lazy" width="600">
 
 ---
 
@@ -237,10 +256,11 @@ Incluye menu hamburguesa, efectos parallax, animaciones y secciones completas (s
 ## Contribuciones y contacto
 
 Este es un proyecto personal de aprendizaje, pero las sugerencias y comentarios son bienvenidos.  
-Puedes abrir un issue en el repositorio o contactarme a traves de:
+Puedes abrir un issue en el repositorio o contactarme a través de:
 
 - [GitHub](https://github.com/santiagoencodigo)
 - [LinkedIn](https://www.linkedin.com/in/santiago-muñeton-hernandez/)
+
 ---
 
-<p align="center">Hecho por Santiago Muneton · <a href="https://santiagoencodigo.github.io/desarrollo-web-profesional/">Visita la web</a></p>
+<p align="center">Hecho por Santiago Muñeton · <a href="https://santiagoencodigo.github.io/desarrollo-web-profesional/">Visita la web</a></p>
