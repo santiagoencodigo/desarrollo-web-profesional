@@ -58,8 +58,8 @@ const projectData = [
         nombre: "7. Programación Básica (Mokepon)",
         descripcion: "Proyecto en desarrollo orientado a la consolidación de los fundamentos de la programación mediante JavaScript, HTML y CSS, aplicando lógica, estructuras de control y manipulación del DOM.",
         imagen: "./assets/img/proyectos/07-mokepon.png",
-        urlDoc: "https://github.com/santiagoencodigo/Desarrollo-Web-Profesional/blob/main/docs/7-programacion-basica.md",
-        urlProyecto: "./projects/programacion-basica/02-mokepon/index.html"
+        urlDoc: "https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/projects/programacion-basica/README.md",
+        urlProyecto: "./projects/programacion-basica/mokepon/mokepon.html"
     },
     {
         id: 8,

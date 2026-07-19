@@ -178,8 +178,8 @@ Recopilación de conceptos clave: bits, bytes, internet, chips, IA, sistemas y a
 
 ### Programación básica (Mokepon)
 
-- [Documentación](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/docs/7-programacion-basica.md)
-- [Proyecto en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/projects/programacion-basica/02-mokepon/index.html)
+- [Documentación](https://github.com/santiagoencodigo/desarrollo-web-profesional/blob/main/projects/programacion-basica)
+- [Proyecto en vivo](https://santiagoencodigo.github.io/desarrollo-web-profesional/projects/programacion-basica/mokepon/mokepon.html)
 
 Videojuego estilo piedra-papel-tijera con temática de mascotas. Desarrollado con JavaScript, HTML y CSS para consolidar lógica de programación, manipulación del DOM y eventos.
 
@@ -245,7 +245,7 @@ Sitio corporativo para una empresa ficticia de outsourcing y gestión del talent
 Desarrollado con HTML semántico, CSS (Grid, Flexbox, variables) y JavaScript Vanilla.  
 Incluye menú hamburguesa, efectos parallax, animaciones y secciones completas (servicios, valores, políticas, equipo directivo). Totalmente responsive.
 
-<img src="./assets/img/instant-talent/01-header.PNG" alt="Header de Instant Talent" loading="lazy" width="600">
+<img src="./assets/img/instant-talent/01-header.png" alt="Header de Instant Talent" loading="lazy" width="600">
 <img src="./assets/img/instant-talent/02-mision-y-vision.png" alt="Misión y visión" loading="lazy" width="600">
 <img src="./assets/img/instant-talent/03-valores-corporativos.png" alt="Valores corporativos" loading="lazy" width="600">
 
